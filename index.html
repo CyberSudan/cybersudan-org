@@ -2,16 +2,82 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>CyberSudan | سايبر سودان</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSudan | مبادرة الأمن السيبراني السوداني</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { background: #000; color: #00ff00; text-align: center; font-family: monospace; padding-top: 100px; }
-        .logo { font-size: 2em; border: 2px solid #00ff00; display: inline-block; padding: 20px; }
+        body { font-family: 'Tajawal', sans-serif; }
+        .cyber-grid {
+            background-image: linear-gradient(to right, #1f2937 1px, transparent 1px),
+                              linear-gradient(to bottom, #1f2937 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
     </style>
 </head>
-<body>
-    <div class="logo">[ CyberSudan Org ]</div>
-    <h1>المبادرة السودانية للأمن السيبراني</h1>
-    <p>النظام قيد التشغيل الآن...</p>
+<body class="bg-gray-900 text-white leading-relaxed overflow-x-hidden">
+
+    <!-- خلفية الشبكة التقنية -->
+    <div class="fixed inset-0 cyber-grid opacity-20 -z-10"></div>
+
+    <!-- Navigation -->
+    <nav class="p-6 flex justify-between items-center border-b border-gray-800 bg-gray-900/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider text-green-400">
+            CYBER<span class="text-white">SUDAN</span>
+        </div>
+        <div class="space-x-reverse space-x-6 hidden md:flex">
+            <a href="#" class="hover:text-green-400 transition">الرئيسية</a>
+            <a href="#about" class="hover:text-green-400 transition">عن المبادرة</a>
+            <a href="#resources" class="hover:text-green-400 transition">المصادر</a>
+            <a href="#" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition">انضم إلينا</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+                نحو فضاء سيبراني سوداني آمن
+            </h1>
+            <p class="text-gray-400 text-xl mb-10">
+                مبادرة وطنية تهدف لرفع الوعي الأمني، حماية البنية التحتية الرقمية، وتأهيل الكوادر السودانية في مجال الأمن السيبراني.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-bold transition transform hover:scale-105">
+                    تصفح التقارير الأمنية
+                </button>
+                <button class="border border-green-600 text-green-400 hover:bg-green-600/10 px-8 py-3 rounded-full font-bold transition">
+                    تعلم الأساسيات
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="about" class="py-16 bg-gray-800/50">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="p-8 border border-gray-700 rounded-2xl hover:border-green-500/50 transition bg-gray-900/50">
+                <div class="text-green-400 text-3xl mb-4">🛡️</div>
+                <h3 class="text-xl font-bold mb-3">التوعية الأمنية</h3>
+                <p class="text-gray-400">نشر الوعي حول التهديدات الرقمية وكيفية حماية البيانات الشخصية والمؤسسية.</p>
+            </div>
+            <div class="p-8 border border-gray-700 rounded-2xl hover:border-green-500/50 transition bg-gray-900/50">
+                <div class="text-green-400 text-3xl mb-4">💻</div>
+                <h3 class="text-xl font-bold mb-3">بناء القدرات</h3>
+                <p class="text-gray-400">تدريب الشباب السوداني على مهارات اختبار الاختراق والدفاع السيبراني.</p>
+            </div>
+            <div class="p-8 border border-gray-700 rounded-2xl hover:border-green-500/50 transition bg-gray-900/50">
+                <div class="text-green-400 text-3xl mb-4">🔍</div>
+                <h3 class="text-xl font-bold mb-3">البحث والتطوير</h3>
+                <p class="text-gray-400">رصد الثغرات وتقديم الاستشارات الفنية لتعزيز السيادة الرقمية.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-gray-800 text-center text-gray-500">
+        <p>© 2026 مبادرة CyberSudan - جميع الحقوق محفوظة</p>
+    </footer>
+
 </body>
 </html>
-<!-- Refresh -->
